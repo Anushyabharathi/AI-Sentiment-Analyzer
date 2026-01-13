@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+.container {
+    width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 25px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+h1 {
+    margin-bottom: 40px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+}
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover {
+    background: #0056b3;
+}
+.result {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.positive {
+    background: #d4edda;
+    color: #155724;
+}
+.negative {
+    background: #f8d7da;
+    color: #721c24;
+}
+.neutral {
+    background: #fff3cd;
+    color: #856404;
+}
+.progress-bar {
+    margin-top: 10px;
+    background: #ddd;
+    border-radius: 20px;
+    height: 12px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background: #28a745;
+}
+.toggle-btn {
+    position: fixed;        
+    top: 15px;                
+    left: 15px;               
+    padding: 10px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #222;
+    color: #fff;
+    z-index: 1000;           
+    transition: background 0.3s ease, transform 0.2s;
+}
+.dark-mode {
+    background: #121212;
+}
+.dark-mode .container {
+    background: #1e1e1e;
+    color: white;
+}
+.dark-mode textarea {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+.dark-mode button {
+    background: #bb86fc;
+}

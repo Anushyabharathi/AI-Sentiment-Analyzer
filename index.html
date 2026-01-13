@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+     <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    <div class="container">
+        <h1>AI Sentiment Analyzer</h1>
+        <p>Enter your text and analyze sentiment instantly</p>
+        <form method="POST">
+            <textarea name="text" placeholder="Type your text here..." required></textarea>
+            <button type="submit">Analyze</button>
+        </form>
+        {% if result %}
+        <div class="result {{ sentiment_class }}">
+            <h2>{{ result }} {{ emoji }}</h2>
+            <p>Confidence Score: {{ score }}%</p>
+        {% if score %}
+        <div class="progress-bar">
+            <div class="progress" style="width: {{ score }}%"></div>
+        </div>
+        {% endif %}
+        </div>
+        {% endif %}
+    </div>
+    <script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+    </script>
+</body>
+</html>
