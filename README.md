@@ -6,14 +6,12 @@ This project is designed to be simple, fast, and beginner-friendly, making it id
 ------------------------------------------------------------------------------------------------------------------------
 
 PROJECT OBJECTIVE:
-      
       * Accept textual input from users (reviews, comments, feedback)
       * Analyze the emotional polarity of the text
       * Display the sentiment result visually using emojis, colors, and a polarity bar
 
 ----------------------------------------------------------------------------------------------------------------------
 FEATURES
-
       * Sentiment classification (Positive / Negative / Neutral)
       * Emoji-based sentiment indication
       * Color-coded sentiment result
@@ -26,7 +24,6 @@ FEATURES
 -----------------------------------------------------------------------------------------------------------------------
 
 TECHNOLOGIES USED
-
       Python – Backend logic
       Flask – Web framework
       TextBlob – NLP sentiment analysis
@@ -47,11 +44,9 @@ APPLICATION WORKFLOW
 
 SENTIMENT LOGIC:
     Polarity Range: -1.0 to +1.0
-    
     * Polarity > 0 → Positive
     * Polarity < 0 → Negative
     * Polarity = 0 → Neutral
-    
     The polarity strength is shown using a percentage-based progress bar.
 
 ------------------------------------------------------------------------------------------------------------------------
